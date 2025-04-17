@@ -54,6 +54,12 @@
 			<artifactId>h2</artifactId>
 			<version>2.3.232</version>
 		</dependency>
+
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.28</version> <!-- Make sure to use a version that supports the newer driver -->
+		</dependency>
 	</dependencies>
 
 	<build>
