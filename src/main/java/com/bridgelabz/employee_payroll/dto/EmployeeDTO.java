@@ -5,7 +5,10 @@ public class EmployeeDTO {
     private int salary;
 
     public EmployeeDTO(){}
-
+//    public EmployeeDTO(String name, int salary){
+//        this.name=name;
+//        this.salary=salary;
+//    }
 
     public String getName(){
         return name;
