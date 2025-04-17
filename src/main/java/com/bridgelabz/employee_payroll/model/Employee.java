@@ -1,6 +1,7 @@
 package com.bridgelabz.employee_payroll.model;
 
 
+import com.bridgelabz.employee_payroll.dto.EmployeeDTO;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -14,6 +15,13 @@ public class Employee {
     private long employeeId;
     private String name;
     private int salary;
+
+    public Employee(){}
+    public Employee(long employeeId, EmployeeDTO employeeDTO){
+        this.employeeId=employeeId;
+        this.name= employeeDTO.getName();
+        this.salary= employeeDTO.getSalary();
+    }
 
     public long getId(){
         return employeeId;
