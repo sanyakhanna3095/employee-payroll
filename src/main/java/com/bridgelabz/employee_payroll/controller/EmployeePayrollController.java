@@ -38,6 +38,15 @@ public class EmployeePayrollController {
     }
 
 
+    @PutMapping("/department/{department}")
+    public ResponseEntity<ResponseDTO> getEmployeePayrollData(@PathVariable("department") String department){
+        List<Employee> employeeList=null;
+        employeeList=employeePayrollService.getEmployeesByDepartment(department);
+        ResponseDTO respDTO=new ResponseDTO("Get call for department successful : ", employeeList);
+        return new ResponseEntity<ResponseDTO>( respDTO,HttpStatus.OK);
+    }
+
+
     @PostMapping("/post")
     public ResponseEntity<ResponseDTO> addEmployeePayrollData(@Valid @RequestBody EmployeeDTO employeeDTO){
         Employee empData=null;
