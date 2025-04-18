@@ -2,6 +2,7 @@ package com.bridgelabz.employee_payroll.services;
 
 import com.bridgelabz.employee_payroll.dto.EmployeeDTO;
 import com.bridgelabz.employee_payroll.dto.ResponseDTO;
+import com.bridgelabz.employee_payroll.exception.EmployeePayrollException;
 import com.bridgelabz.employee_payroll.model.Employee;
 import com.bridgelabz.employee_payroll.repository.EmployeeRepository;
 import org.springframework.http.ResponseEntity;
@@ -18,7 +19,11 @@ public class EmployeePayrollService implements IEmployeePayrollService{
     }
 
     public Employee getEmployeePayrollDataById(long employeeId){
-        return employeeList.get((int)employeeId-1);
+//        return employeeList.get((int)employeeId-1);
+        return employeeList.stream()
+                .filter(empData-> empData.getId()==employeeId)
+                .findFirst()
+                .orElseThrow(()-> new EmployeePayrollException("Employee Not Found"));
     }
 
     public Employee addEmployeePayrollData(EmployeeDTO employeeDTO){

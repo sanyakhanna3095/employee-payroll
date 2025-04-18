@@ -20,11 +20,16 @@ import java.util.stream.Collectors;
 
 @ControllerAdvice
 public class EmployeePayrollExceptionHandler {
-    @ExceptionHandler(MethodArgumentNotValidException.class)
-    public ResponseEntity<ResponseDTO> handleMethodArgumentNotValidException(MethodArgumentNotValidException exception){
-        List<ObjectError> errorList=exception.getBindingResult().getAllErrors();
-        List<String> errMsg=errorList.stream().map(objErr->objErr.getDefaultMessage()).collect(Collectors.toList());
-        ResponseDTO responseDTO=new ResponseDTO("Exception while processing RESDT Request", errMsg);
-        return new ResponseEntity<ResponseDTO>(responseDTO, HttpStatus.BAD_REQUEST);
-    }
+        @ExceptionHandler(EmployeePayrollException.class)
+        public ResponseEntity<ResponseDTO> handlePayrollException(EmployeePayrollException exception){
+            ResponseDTO responseDTO = new ResponseDTO("Exception while processing REST Request", exception.getMessage());
+            return new ResponseEntity<ResponseDTO>(responseDTO, HttpStatus.BAD_REQUEST);
+        }
+
+        public ResponseEntity<ResponseDTO> handleMethodArgumentNotValidException(MethodArgumentNotValidException exception){
+            List<ObjectError> errorList=exception.getBindingResult().getAllErrors();
+            List<String> errMsg=errorList.stream().map(objErr->objErr.getDefaultMessage()).collect(Collectors.toList());
+            ResponseDTO responseDTO=new ResponseDTO("Exception while processing RESDT Request", errMsg);
+            return new ResponseEntity<ResponseDTO>(responseDTO, HttpStatus.BAD_REQUEST);
+        }
 }
