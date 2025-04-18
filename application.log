@@ -74,3 +74,18 @@ java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
 2025-04-18T11:51:42.870+05:30  INFO 64869 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Started EmployeePayrollApplication in 6.255 seconds (process running for 6.896)
 2025-04-18T11:51:42.875+05:30  INFO 64869 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Employee Payroll App Started in DEV Environment
 2025-04-18T11:51:42.877+05:30  INFO 64869 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Employee Payroll DB user is root
+2025-04-18T13:31:21.232+05:30  INFO 65230 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Starting EmployeePayrollApplication using Java 17.0.6 with PID 65230 (/Users/sanyakhanna/Desktop/bridgelabz-workspace/employee-payroll/target/classes started by sanyakhanna in /Users/sanyakhanna/Desktop/bridgelabz-workspace/employee-payroll)
+2025-04-18T13:31:21.235+05:30 DEBUG 65230 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Running with Spring Boot v3.3.10, Spring v6.1.18
+2025-04-18T13:31:21.238+05:30  INFO 65230 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : The following 1 profile is active: "dev"
+2025-04-18T13:31:26.234+05:30  WARN 65230 --- [employee-payroll] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-18T13:31:27.280+05:30  INFO 65230 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Started EmployeePayrollApplication in 6.88 seconds (process running for 7.56)
+2025-04-18T13:31:27.307+05:30  INFO 65230 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Employee Payroll App Started in DEV Environment
+2025-04-18T13:31:27.311+05:30  INFO 65230 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Employee Payroll DB user is root
+2025-04-18T13:39:07.252+05:30  WARN 65230 --- [employee-payroll] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m42s147ms).
+2025-04-18T13:41:29.777+05:30  INFO 65331 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Starting EmployeePayrollApplication using Java 17.0.6 with PID 65331 (/Users/sanyakhanna/Desktop/bridgelabz-workspace/employee-payroll/target/classes started by sanyakhanna in /Users/sanyakhanna/Desktop/bridgelabz-workspace/employee-payroll)
+2025-04-18T13:41:29.780+05:30 DEBUG 65331 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Running with Spring Boot v3.3.10, Spring v6.1.18
+2025-04-18T13:41:29.783+05:30  INFO 65331 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : The following 1 profile is active: "dev"
+2025-04-18T13:41:34.271+05:30  WARN 65331 --- [employee-payroll] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-18T13:41:35.029+05:30  INFO 65331 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Started EmployeePayrollApplication in 6.105 seconds (process running for 6.75)
+2025-04-18T13:41:35.034+05:30  INFO 65331 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Employee Payroll App Started in DEV Environment
+2025-04-18T13:41:35.037+05:30  INFO 65331 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Employee Payroll DB user is root

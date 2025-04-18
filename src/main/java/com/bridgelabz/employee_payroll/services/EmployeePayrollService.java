@@ -28,16 +28,16 @@ public class EmployeePayrollService implements IEmployeePayrollService{
         return empData;
     }
 
-    public Employee updateEmployeePayrollData(EmployeeDTO employeeDTO){
-        Employee empData=null;
-        empData=new Employee(1,employeeDTO);
-        return empData;
-    }
+//    public Employee updateEmployeePayrollData(EmployeeDTO employeeDTO){
+//        Employee empData=null;
+//        empData=new Employee(1,employeeDTO);
+//        return empData;
+//    }
 
     public Employee updateEmployeePayrollDataById(long employeeId, EmployeeDTO employeeDTO){
         Employee empData=this.getEmployeePayrollDataById(employeeId);
-        empData.setName("Sanya");
-        empData.setSalary(50000);
+        empData.setName(employeeDTO.getName());
+        empData.setSalary(employeeDTO.getSalary());
         employeeList.set((int) (employeeId-1),empData);
         return empData;
     }
