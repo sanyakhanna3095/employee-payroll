@@ -38,12 +38,13 @@ public class EmployeePayrollService implements IEmployeePayrollService{
         Employee empData=this.getEmployeePayrollDataById(employeeId);
         empData.setName("Sanya");
         empData.setSalary(50000);
-        employeeList.add((int) (employeeId-1),empData);
+        employeeList.set((int) (employeeId-1),empData);
         return empData;
     }
 
     public void deleteEmployeePayrollData(long employeeId) {
 //        EmployeeRepository.deleteEmployeePayrollData(employeeId);
-        employeeList.remove(employeeId-1);
+//        employeeList.remove(employeeId-1);
+        employeeList.removeIf(emp -> emp.getId() == employeeId);
     }
 }
