@@ -10,6 +10,6 @@ import java.util.List;
 
 @Repository
 public interface EmployeeRepository extends JpaRepository<Employee, Long> {
-    @Query(value = "select * from payroll_service, employee_department where employeeId=id and department = :department", nativeQuery = true)
+    @Query(value = "select * from payroll_service, employee_department where employee_id=id and department = :department", nativeQuery = true)
     List<Employee> findEmployeesByDepartment(String department);
 }
