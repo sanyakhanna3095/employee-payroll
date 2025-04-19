@@ -27,7 +27,7 @@ public class EmployeePayrollExceptionHandler {
         @ExceptionHandler(HttpMessageNotReadableException.class)
         public ResponseEntity<ResponseDTO> handleHttpMessageNotReadableException(HttpMessageNotReadableException exception){
             log.error("Invalid date format", exception);
-            ResponseDTO responseDTO = new ResponseDTO(message,"Should have date in the format dd MM yyyy");
+            ResponseDTO responseDTO = new ResponseDTO(message,"Should have date in the format dd-MM-yyyy");
             return new ResponseEntity<ResponseDTO>(responseDTO, HttpStatus.BAD_REQUEST);
         }
 
@@ -38,10 +38,11 @@ public class EmployeePayrollExceptionHandler {
             return new ResponseEntity<ResponseDTO>(responseDTO, HttpStatus.BAD_REQUEST);
         }
 
+       @ExceptionHandler(MethodArgumentNotValidException.class)
         public ResponseEntity<ResponseDTO> handleMethodArgumentNotValidException(MethodArgumentNotValidException exception){
             List<ObjectError> errorList=exception.getBindingResult().getAllErrors();
             List<String> errMsg=errorList.stream().map(objErr->objErr.getDefaultMessage()).collect(Collectors.toList());
-            ResponseDTO responseDTO=new ResponseDTO("Exception while processing RESDT Request", errMsg);
+            ResponseDTO responseDTO=new ResponseDTO("Exception while processing REST Request", errMsg);
             return new ResponseEntity<ResponseDTO>(responseDTO, HttpStatus.BAD_REQUEST);
         }
 }
