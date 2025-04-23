@@ -15,6 +15,10 @@ import org.springframework.web.filter.OncePerRequestFilter;
 
 import java.io.IOException;
 
+
+//how jwt token is being passed
+//responsible for validating JWT (JSON Web Tokens) on every HTTP request to ensure proper authentication
+//intercepting every request and checking if a valid JWT token is present in the Authorization header
 @Component
 public class JwtRequestFilter extends OncePerRequestFilter {
     @Autowired
