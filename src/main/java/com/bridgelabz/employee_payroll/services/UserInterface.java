@@ -19,4 +19,8 @@ public interface UserInterface {
     boolean existsByEmail(@NotBlank(message = "Email field can't be empty") @Email String email);
 
     Optional<User> getUserByEmail(String email);
+
+    ResponseDTO forgetPassword(@NotBlank(message = "Email field can't be empty") @Email String email);
+
+    ResponseDTO<String, String> resetPassword(String token, String newPassword);
 }

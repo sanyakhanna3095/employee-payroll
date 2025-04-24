@@ -35,4 +35,21 @@ public class UserController {
         return new ResponseEntity<>(responseDTO,
                 responseDTO.getMessage().equals("error") ? HttpStatus.UNAUTHORIZED : HttpStatus.OK);
     }
+
+    // Forget password endpoint
+    @PostMapping("/forget-password/{email}")
+    public ResponseEntity<ResponseDTO> forgetPassword(@PathVariable ("email") String email){
+        ResponseDTO responseDTO =userService.forgetPassword(email);
+        return new ResponseEntity<>(responseDTO,
+                responseDTO.getMessage().equals("error") ? HttpStatus.BAD_REQUEST : HttpStatus.OK);
+    }
+
+
+    // Reset password endpoint
+    @PostMapping("/reset-password/{token}/{newPassword}")
+    public ResponseEntity<ResponseDTO> resetPassword(@PathVariable String token, @PathVariable String newPassword) {
+        ResponseDTO responseDTO = userService.resetPassword(token, newPassword);
+        return new ResponseEntity<>(responseDTO,
+                responseDTO.getMessage().equals("error") ? HttpStatus.BAD_REQUEST : HttpStatus.OK);
+    }
 }

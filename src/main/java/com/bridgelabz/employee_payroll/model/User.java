@@ -34,6 +34,8 @@ public class User implements UserDetails {
 
     private String token;
 
+    private String resetToken;
+
 //    public long getId(){
 //        return id;
 //    }
@@ -55,4 +57,7 @@ public class User implements UserDetails {
     public String getUsername() {
         return name;
     }
+
+//    public void setResetToken(Object o) {
+//    }
 }
