@@ -1,14 +1,57 @@
-2025-04-24T15:18:09.922+05:30  INFO 7148 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Starting EmployeePayrollApplication using Java 17.0.6 with PID 7148 (/Users/sanyakhanna/Desktop/bridgelabz-workspace/employee-payroll/target/classes started by sanyakhanna in /Users/sanyakhanna/Desktop/bridgelabz-workspace/employee-payroll)
-2025-04-24T15:18:09.947+05:30 DEBUG 7148 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Running with Spring Boot v3.3.10, Spring v6.1.18
-2025-04-24T15:18:09.960+05:30  INFO 7148 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : The following 1 profile is active: "dev"
-2025-04-24T15:18:16.006+05:30 DEBUG 7148 --- [employee-payroll] [main] c.b.e.utility.JwtRequestFilter           : Filter 'jwtRequestFilter' configured for use
-2025-04-24T15:18:16.467+05:30  WARN 7148 --- [employee-payroll] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-04-24T15:18:17.283+05:30  INFO 7148 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Started EmployeePayrollApplication in 8.205 seconds (process running for 8.861)
-2025-04-24T15:18:17.288+05:30  INFO 7148 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Employee Payroll App Started in DEV Environment
-2025-04-24T15:18:17.290+05:30  INFO 7148 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Employee Payroll DB user is root
-2025-04-24T15:18:24.196+05:30 ERROR 7148 --- [employee-payroll] [http-nio-8081-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+2025-04-25T09:23:08.582+05:30  INFO 9729 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Starting EmployeePayrollApplication using Java 17.0.6 with PID 9729 (/Users/sanyakhanna/Desktop/bridgelabz-workspace/employee-payroll/target/classes started by sanyakhanna in /Users/sanyakhanna/Desktop/bridgelabz-workspace/employee-payroll)
+2025-04-25T09:23:08.612+05:30 DEBUG 9729 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Running with Spring Boot v3.3.10, Spring v6.1.18
+2025-04-25T09:23:08.617+05:30  INFO 9729 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : The following 1 profile is active: "dev"
+2025-04-25T09:23:14.528+05:30 DEBUG 9729 --- [employee-payroll] [main] c.b.e.utility.JwtRequestFilter           : Filter 'jwtRequestFilter' configured for use
+2025-04-25T09:23:15.009+05:30  WARN 9729 --- [employee-payroll] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-25T09:23:15.721+05:30  INFO 9729 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Started EmployeePayrollApplication in 8.119 seconds (process running for 8.918)
+2025-04-25T09:23:15.726+05:30  INFO 9729 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Employee Payroll App Started in DEV Environment
+2025-04-25T09:23:15.728+05:30  INFO 9729 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Employee Payroll DB user is root
+2025-04-25T09:23:33.406+05:30  INFO 9763 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Starting EmployeePayrollApplication using Java 17.0.6 with PID 9763 (/Users/sanyakhanna/Desktop/bridgelabz-workspace/employee-payroll/target/classes started by sanyakhanna in /Users/sanyakhanna/Desktop/bridgelabz-workspace/employee-payroll)
+2025-04-25T09:23:33.410+05:30 DEBUG 9763 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Running with Spring Boot v3.3.10, Spring v6.1.18
+2025-04-25T09:23:33.412+05:30  INFO 9763 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : The following 1 profile is active: "dev"
+2025-04-25T09:23:39.973+05:30 DEBUG 9763 --- [employee-payroll] [main] c.b.e.utility.JwtRequestFilter           : Filter 'jwtRequestFilter' configured for use
+2025-04-25T09:23:40.518+05:30  WARN 9763 --- [employee-payroll] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-25T09:23:41.424+05:30  INFO 9763 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Started EmployeePayrollApplication in 8.906 seconds (process running for 9.607)
+2025-04-25T09:23:41.431+05:30  INFO 9763 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Employee Payroll App Started in DEV Environment
+2025-04-25T09:23:41.433+05:30  INFO 9763 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Employee Payroll DB user is root
+2025-04-25T09:26:13.426+05:30  WARN 9763 --- [employee-payroll] [http-nio-8081-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-04-25T09:27:01.961+05:30  INFO 9763 --- [employee-payroll] [http-nio-8081-exec-3] c.b.e.services.UserService               : Registering user:sanyakhanna2020@gmail.com
+2025-04-25T09:27:01.964+05:30 DEBUG 9763 --- [employee-payroll] [http-nio-8081-exec-3] c.b.e.services.UserService               : Checking if user exists using email:sanyakhanna2020@gmail.com
+2025-04-25T09:27:02.247+05:30  WARN 9763 --- [employee-payroll] [http-nio-8081-exec-3] c.b.e.services.UserService               : Registration failed: User already exists within email sanyakhanna2020@gmail.com
+2025-04-25T09:27:47.262+05:30  WARN 9763 --- [employee-payroll] [http-nio-8081-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-04-25T09:28:02.395+05:30  INFO 9763 --- [employee-payroll] [http-nio-8081-exec-5] c.b.e.services.UserService               : Login attempt for user:sanyakhanna2020@gmail.com
+2025-04-25T09:28:02.398+05:30 DEBUG 9763 --- [employee-payroll] [http-nio-8081-exec-5] c.b.e.services.UserService               : Fetching user by email: sanyakhanna2020@gmail.com
+2025-04-25T09:28:02.432+05:30 DEBUG 9763 --- [employee-payroll] [http-nio-8081-exec-5] c.b.e.services.UserService               : Matching password for login attempt
+2025-04-25T09:28:02.719+05:30 DEBUG 9763 --- [employee-payroll] [http-nio-8081-exec-5] c.b.e.services.UserService               : Login successful for user: sanyakhanna2020@gmail.com - Token generated
+2025-04-25T09:28:23.937+05:30  INFO 9763 --- [employee-payroll] [http-nio-8081-exec-6] c.b.e.services.UserService               : Login attempt for user:sanyakhanna2020@gmail.com
+2025-04-25T09:28:23.939+05:30 DEBUG 9763 --- [employee-payroll] [http-nio-8081-exec-6] c.b.e.services.UserService               : Fetching user by email: sanyakhanna2020@gmail.com
+2025-04-25T09:28:23.943+05:30 DEBUG 9763 --- [employee-payroll] [http-nio-8081-exec-6] c.b.e.services.UserService               : Matching password for login attempt
+2025-04-25T09:28:24.049+05:30 DEBUG 9763 --- [employee-payroll] [http-nio-8081-exec-6] c.b.e.services.UserService               : Login successful for user: sanyakhanna2020@gmail.com - Token generated
+2025-04-25T09:28:58.593+05:30  INFO 9763 --- [employee-payroll] [http-nio-8081-exec-7] c.b.e.services.UserService               : Forget password for email: sanyakhanna2020@gmail.com
+2025-04-25T09:28:58.594+05:30 DEBUG 9763 --- [employee-payroll] [http-nio-8081-exec-7] c.b.e.services.UserService               : Fetching user by email: sanyakhanna2020@gmail.com
+2025-04-25T10:07:46.728+05:30  INFO 11955 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Starting EmployeePayrollApplication using Java 17.0.6 with PID 11955 (/Users/sanyakhanna/Desktop/bridgelabz-workspace/employee-payroll/target/classes started by sanyakhanna in /Users/sanyakhanna/Desktop/bridgelabz-workspace/employee-payroll)
+2025-04-25T10:07:46.731+05:30 DEBUG 11955 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Running with Spring Boot v3.3.10, Spring v6.1.18
+2025-04-25T10:07:46.733+05:30  INFO 11955 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : The following 1 profile is active: "dev"
+2025-04-25T10:07:52.374+05:30 DEBUG 11955 --- [employee-payroll] [main] c.b.e.utility.JwtRequestFilter           : Filter 'jwtRequestFilter' configured for use
+2025-04-25T10:07:52.625+05:30  WARN 11955 --- [employee-payroll] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-25T10:07:53.636+05:30  INFO 11955 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Started EmployeePayrollApplication in 7.743 seconds (process running for 8.377)
+2025-04-25T10:07:53.641+05:30  INFO 11955 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Employee Payroll App Started in DEV Environment
+2025-04-25T10:07:53.642+05:30  INFO 11955 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Employee Payroll DB user is root
+2025-04-25T10:08:09.604+05:30  INFO 11955 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Registering user:sanyakhanna2020@gmail.com
+2025-04-25T10:08:09.608+05:30 DEBUG 11955 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Checking if user exists using email:sanyakhanna2020@gmail.com
+2025-04-25T10:08:09.763+05:30  WARN 11955 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Registration failed: User already exists within email sanyakhanna2020@gmail.com
+2025-04-25T10:08:25.655+05:30  WARN 11955 --- [employee-payroll] [http-nio-8081-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-04-25T10:08:35.211+05:30  INFO 11955 --- [employee-payroll] [http-nio-8081-exec-4] c.b.e.services.UserService               : Login attempt for user:sanyakhanna2020@gmail.com
+2025-04-25T10:08:35.213+05:30 DEBUG 11955 --- [employee-payroll] [http-nio-8081-exec-4] c.b.e.services.UserService               : Fetching user by email: sanyakhanna2020@gmail.com
+2025-04-25T10:08:35.231+05:30 DEBUG 11955 --- [employee-payroll] [http-nio-8081-exec-4] c.b.e.services.UserService               : Matching password for login attempt
+2025-04-25T10:08:35.527+05:30 DEBUG 11955 --- [employee-payroll] [http-nio-8081-exec-4] c.b.e.services.UserService               : Login successful for user: sanyakhanna2020@gmail.com - Token generated
+2025-04-25T10:08:54.276+05:30  INFO 11955 --- [employee-payroll] [http-nio-8081-exec-5] c.b.e.services.UserService               : Login attempt for user:sanyakhanna2020@gmail.com
+2025-04-25T10:08:54.278+05:30 DEBUG 11955 --- [employee-payroll] [http-nio-8081-exec-5] c.b.e.services.UserService               : Fetching user by email: sanyakhanna2020@gmail.com
+2025-04-25T10:08:54.282+05:30 DEBUG 11955 --- [employee-payroll] [http-nio-8081-exec-5] c.b.e.services.UserService               : Matching password for login attempt
+2025-04-25T10:08:54.436+05:30 DEBUG 11955 --- [employee-payroll] [http-nio-8081-exec-5] c.b.e.services.UserService               : Login successful for user: sanyakhanna2020@gmail.com - Token generated
+2025-04-25T10:09:20.277+05:30 ERROR 11955 --- [employee-payroll] [http-nio-8081-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
 
-org.springframework.security.core.userdetails.UsernameNotFoundException: User not found with email: JWT expired at 2025-04-23T09:43:55Z. Current time: 2025-04-24T09:48:24Z, a difference of 86669027 milliseconds.  Allowed clock skew: 0 milliseconds.
+org.springframework.security.core.userdetails.UsernameNotFoundException: User not found with email: JWT expired at 2025-04-25T04:01:02Z. Current time: 2025-04-25T04:39:20Z, a difference of 2298245 milliseconds.  Allowed clock skew: 0 milliseconds.
 	at com.bridgelabz.employee_payroll.services.JwtUserDetailsService.lambda$loadUserByUsername$0(JwtUserDetailsService.java:19) ~[classes/:na]
 	at java.base/java.util.Optional.orElseThrow(Optional.java:403) ~[na:na]
 	at com.bridgelabz.employee_payroll.services.JwtUserDetailsService.loadUserByUsername(JwtUserDetailsService.java:19) ~[classes/:na]
@@ -71,17 +114,72 @@ org.springframework.security.core.userdetails.UsernameNotFoundException: User no
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
 
-2025-04-24T15:21:48.444+05:30  INFO 7179 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Starting EmployeePayrollApplication using Java 17.0.6 with PID 7179 (/Users/sanyakhanna/Desktop/bridgelabz-workspace/employee-payroll/target/classes started by sanyakhanna in /Users/sanyakhanna/Desktop/bridgelabz-workspace/employee-payroll)
-2025-04-24T15:21:48.450+05:30 DEBUG 7179 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Running with Spring Boot v3.3.10, Spring v6.1.18
-2025-04-24T15:21:48.453+05:30  INFO 7179 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : The following 1 profile is active: "dev"
-2025-04-24T15:21:54.271+05:30 DEBUG 7179 --- [employee-payroll] [main] c.b.e.utility.JwtRequestFilter           : Filter 'jwtRequestFilter' configured for use
-2025-04-24T15:21:54.516+05:30  WARN 7179 --- [employee-payroll] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-04-24T15:21:55.604+05:30  INFO 7179 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Started EmployeePayrollApplication in 8.123 seconds (process running for 8.854)
-2025-04-24T15:21:55.609+05:30  INFO 7179 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Employee Payroll App Started in DEV Environment
-2025-04-24T15:21:55.611+05:30  INFO 7179 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Employee Payroll DB user is root
-2025-04-24T15:22:06.120+05:30 ERROR 7179 --- [employee-payroll] [http-nio-8081-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+2025-04-25T10:10:46.410+05:30  INFO 11999 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Starting EmployeePayrollApplication using Java 17.0.6 with PID 11999 (/Users/sanyakhanna/Desktop/bridgelabz-workspace/employee-payroll/target/classes started by sanyakhanna in /Users/sanyakhanna/Desktop/bridgelabz-workspace/employee-payroll)
+2025-04-25T10:10:46.414+05:30 DEBUG 11999 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Running with Spring Boot v3.3.10, Spring v6.1.18
+2025-04-25T10:10:46.418+05:30  INFO 11999 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : The following 1 profile is active: "dev"
+2025-04-25T10:10:52.255+05:30 DEBUG 11999 --- [employee-payroll] [main] c.b.e.utility.JwtRequestFilter           : Filter 'jwtRequestFilter' configured for use
+2025-04-25T10:10:52.835+05:30  WARN 11999 --- [employee-payroll] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-25T10:10:53.653+05:30  INFO 11999 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Started EmployeePayrollApplication in 8.1 seconds (process running for 8.779)
+2025-04-25T10:10:53.656+05:30  INFO 11999 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Employee Payroll App Started in DEV Environment
+2025-04-25T10:10:53.658+05:30  INFO 11999 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Employee Payroll DB user is root
+2025-04-25T10:15:48.975+05:30  INFO 12043 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Starting EmployeePayrollApplication using Java 17.0.6 with PID 12043 (/Users/sanyakhanna/Desktop/bridgelabz-workspace/employee-payroll/target/classes started by sanyakhanna in /Users/sanyakhanna/Desktop/bridgelabz-workspace/employee-payroll)
+2025-04-25T10:15:48.979+05:30 DEBUG 12043 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Running with Spring Boot v3.3.10, Spring v6.1.18
+2025-04-25T10:15:48.980+05:30  INFO 12043 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : The following 1 profile is active: "dev"
+2025-04-25T10:15:54.420+05:30 DEBUG 12043 --- [employee-payroll] [main] c.b.e.utility.JwtRequestFilter           : Filter 'jwtRequestFilter' configured for use
+2025-04-25T10:15:54.682+05:30  WARN 12043 --- [employee-payroll] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-25T10:15:55.724+05:30  INFO 12043 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Started EmployeePayrollApplication in 7.587 seconds (process running for 8.143)
+2025-04-25T10:15:55.729+05:30  INFO 12043 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Employee Payroll App Started in DEV Environment
+2025-04-25T10:15:55.731+05:30  INFO 12043 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Employee Payroll DB user is root
+2025-04-25T10:16:09.766+05:30  INFO 12043 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Login attempt for user:sanyakhanna2020@gmail.com
+2025-04-25T10:16:09.769+05:30 DEBUG 12043 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Fetching user by email: sanyakhanna2020@gmail.com
+2025-04-25T10:16:09.907+05:30 DEBUG 12043 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Matching password for login attempt
+2025-04-25T10:16:10.125+05:30 DEBUG 12043 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Login successful for user: sanyakhanna2020@gmail.com - Token generated
+2025-04-25T10:18:56.357+05:30  INFO 12078 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Starting EmployeePayrollApplication using Java 17.0.6 with PID 12078 (/Users/sanyakhanna/Desktop/bridgelabz-workspace/employee-payroll/target/classes started by sanyakhanna in /Users/sanyakhanna/Desktop/bridgelabz-workspace/employee-payroll)
+2025-04-25T10:18:56.362+05:30 DEBUG 12078 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Running with Spring Boot v3.3.10, Spring v6.1.18
+2025-04-25T10:18:56.364+05:30  INFO 12078 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : The following 1 profile is active: "dev"
+2025-04-25T10:19:01.835+05:30 DEBUG 12078 --- [employee-payroll] [main] c.b.e.utility.JwtRequestFilter           : Filter 'jwtRequestFilter' configured for use
+2025-04-25T10:19:02.076+05:30  WARN 12078 --- [employee-payroll] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-25T10:19:03.107+05:30  INFO 12078 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Started EmployeePayrollApplication in 7.609 seconds (process running for 8.257)
+2025-04-25T10:19:03.113+05:30  INFO 12078 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Employee Payroll App Started in DEV Environment
+2025-04-25T10:19:03.115+05:30  INFO 12078 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Employee Payroll DB user is root
+2025-04-25T10:20:12.820+05:30  INFO 12078 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Registering user:sanyakhanna2020@gmail.com
+2025-04-25T10:20:12.822+05:30 DEBUG 12078 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Checking if user exists using email:sanyakhanna2020@gmail.com
+2025-04-25T10:20:12.972+05:30  WARN 12078 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Registration failed: User already exists within email sanyakhanna2020@gmail.com
+2025-04-25T10:20:16.723+05:30  INFO 12078 --- [employee-payroll] [http-nio-8081-exec-3] c.b.e.services.UserService               : Login attempt for user:sanyakhanna2020@gmail.com
+2025-04-25T10:20:16.724+05:30 DEBUG 12078 --- [employee-payroll] [http-nio-8081-exec-3] c.b.e.services.UserService               : Fetching user by email: sanyakhanna2020@gmail.com
+2025-04-25T10:20:16.730+05:30 DEBUG 12078 --- [employee-payroll] [http-nio-8081-exec-3] c.b.e.services.UserService               : Matching password for login attempt
+2025-04-25T10:20:16.969+05:30 DEBUG 12078 --- [employee-payroll] [http-nio-8081-exec-3] c.b.e.services.UserService               : Login successful for user: sanyakhanna2020@gmail.com - Token generated
+2025-04-25T10:21:10.474+05:30  INFO 12097 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Starting EmployeePayrollApplication using Java 17.0.6 with PID 12097 (/Users/sanyakhanna/Desktop/bridgelabz-workspace/employee-payroll/target/classes started by sanyakhanna in /Users/sanyakhanna/Desktop/bridgelabz-workspace/employee-payroll)
+2025-04-25T10:21:10.478+05:30 DEBUG 12097 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Running with Spring Boot v3.3.10, Spring v6.1.18
+2025-04-25T10:21:10.480+05:30  INFO 12097 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : The following 1 profile is active: "dev"
+2025-04-25T10:21:15.788+05:30 DEBUG 12097 --- [employee-payroll] [main] c.b.e.utility.JwtRequestFilter           : Filter 'jwtRequestFilter' configured for use
+2025-04-25T10:21:16.139+05:30  WARN 12097 --- [employee-payroll] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-25T10:21:17.121+05:30  INFO 12097 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Started EmployeePayrollApplication in 7.476 seconds (process running for 8.034)
+2025-04-25T10:21:17.126+05:30  INFO 12097 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Employee Payroll App Started in DEV Environment
+2025-04-25T10:21:17.128+05:30  INFO 12097 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Employee Payroll DB user is root
+2025-04-25T10:21:31.317+05:30  INFO 12097 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Login attempt for user:sanyakhanna2020@gmail.com
+2025-04-25T10:21:31.318+05:30 DEBUG 12097 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Fetching user by email: sanyakhanna2020@gmail.com
+2025-04-25T10:21:31.446+05:30 DEBUG 12097 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Matching password for login attempt
+2025-04-25T10:21:31.644+05:30 DEBUG 12097 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Login successful for user: sanyakhanna2020@gmail.com - Token generated
+2025-04-25T10:26:49.434+05:30  INFO 12212 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Starting EmployeePayrollApplication using Java 17.0.6 with PID 12212 (/Users/sanyakhanna/Desktop/bridgelabz-workspace/employee-payroll/target/classes started by sanyakhanna in /Users/sanyakhanna/Desktop/bridgelabz-workspace/employee-payroll)
+2025-04-25T10:26:49.438+05:30 DEBUG 12212 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Running with Spring Boot v3.3.10, Spring v6.1.18
+2025-04-25T10:26:49.439+05:30  INFO 12212 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : The following 1 profile is active: "dev"
+2025-04-25T10:26:55.551+05:30 DEBUG 12212 --- [employee-payroll] [main] c.b.e.utility.JwtRequestFilter           : Filter 'jwtRequestFilter' configured for use
+2025-04-25T10:26:55.983+05:30  WARN 12212 --- [employee-payroll] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-25T10:26:56.925+05:30  INFO 12212 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Started EmployeePayrollApplication in 8.336 seconds (process running for 8.987)
+2025-04-25T10:26:56.931+05:30  INFO 12212 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Employee Payroll App Started in DEV Environment
+2025-04-25T10:26:56.933+05:30  INFO 12212 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Employee Payroll DB user is root
+2025-04-25T10:27:00.793+05:30  INFO 12212 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Login attempt for user:sanyakhanna2020@gmail.com
+2025-04-25T10:27:00.794+05:30 DEBUG 12212 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Fetching user by email: sanyakhanna2020@gmail.com
+2025-04-25T10:27:00.915+05:30 DEBUG 12212 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Matching password for login attempt
+2025-04-25T10:27:01.138+05:30 DEBUG 12212 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Login successful for user: sanyakhanna2020@gmail.com - Token generated
+2025-04-25T10:27:39.177+05:30  INFO 12212 --- [employee-payroll] [http-nio-8081-exec-4] c.b.e.services.UserService               : Login attempt for user:sanyakhanna2020@gmail.com
+2025-04-25T10:27:39.179+05:30 DEBUG 12212 --- [employee-payroll] [http-nio-8081-exec-4] c.b.e.services.UserService               : Fetching user by email: sanyakhanna2020@gmail.com
+2025-04-25T10:27:39.182+05:30 DEBUG 12212 --- [employee-payroll] [http-nio-8081-exec-4] c.b.e.services.UserService               : Matching password for login attempt
+2025-04-25T10:27:39.301+05:30 DEBUG 12212 --- [employee-payroll] [http-nio-8081-exec-4] c.b.e.services.UserService               : Login successful for user: sanyakhanna2020@gmail.com - Token generated
+2025-04-25T10:27:50.328+05:30 ERROR 12212 --- [employee-payroll] [http-nio-8081-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
 
-org.springframework.security.core.userdetails.UsernameNotFoundException: User not found with email: JWT expired at 2025-04-23T09:43:55Z. Current time: 2025-04-24T09:52:05Z, a difference of 86890951 milliseconds.  Allowed clock skew: 0 milliseconds.
+org.springframework.security.core.userdetails.UsernameNotFoundException: User not found with email: JWT expired at 2025-04-25T04:01:02Z. Current time: 2025-04-25T04:57:50Z, a difference of 3408310 milliseconds.  Allowed clock skew: 0 milliseconds.
 	at com.bridgelabz.employee_payroll.services.JwtUserDetailsService.lambda$loadUserByUsername$0(JwtUserDetailsService.java:19) ~[classes/:na]
 	at java.base/java.util.Optional.orElseThrow(Optional.java:403) ~[na:na]
 	at com.bridgelabz.employee_payroll.services.JwtUserDetailsService.loadUserByUsername(JwtUserDetailsService.java:19) ~[classes/:na]
@@ -144,24 +242,384 @@ org.springframework.security.core.userdetails.UsernameNotFoundException: User no
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
 
-2025-04-24T15:23:14.672+05:30  INFO 7196 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Starting EmployeePayrollApplication using Java 17.0.6 with PID 7196 (/Users/sanyakhanna/Desktop/bridgelabz-workspace/employee-payroll/target/classes started by sanyakhanna in /Users/sanyakhanna/Desktop/bridgelabz-workspace/employee-payroll)
-2025-04-24T15:23:14.675+05:30 DEBUG 7196 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Running with Spring Boot v3.3.10, Spring v6.1.18
-2025-04-24T15:23:14.678+05:30  INFO 7196 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : The following 1 profile is active: "dev"
-2025-04-24T15:23:19.951+05:30 DEBUG 7196 --- [employee-payroll] [main] c.b.e.utility.JwtRequestFilter           : Filter 'jwtRequestFilter' configured for use
-2025-04-24T15:23:20.167+05:30  WARN 7196 --- [employee-payroll] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-04-24T15:23:21.224+05:30  INFO 7196 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Started EmployeePayrollApplication in 7.391 seconds (process running for 8.041)
-2025-04-24T15:23:21.229+05:30  INFO 7196 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Employee Payroll App Started in DEV Environment
-2025-04-24T15:23:21.231+05:30  INFO 7196 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Employee Payroll DB user is root
-2025-04-24T15:23:24.829+05:30  INFO 7196 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Registering user:sanyakhanna2020@gmail.com
-2025-04-24T15:23:24.831+05:30 DEBUG 7196 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Checking if user exists using email:sanyakhanna2020@gmail.com
-2025-04-24T15:23:25.152+05:30  INFO 7196 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : User sanyakhanna2020@gmail.com registered successfuly!
-2025-04-24T15:23:47.433+05:30  INFO 7196 --- [employee-payroll] [http-nio-8081-exec-2] c.b.e.services.UserService               : Login attempt for user:sanyakhanna2020@gmail.com
-2025-04-24T15:23:47.435+05:30 DEBUG 7196 --- [employee-payroll] [http-nio-8081-exec-2] c.b.e.services.UserService               : Fetching user by email: sanyakhanna2020@gmail.com
-2025-04-24T15:23:47.467+05:30 DEBUG 7196 --- [employee-payroll] [http-nio-8081-exec-2] c.b.e.services.UserService               : Matching password for login attempt
-2025-04-24T15:23:47.624+05:30 DEBUG 7196 --- [employee-payroll] [http-nio-8081-exec-2] c.b.e.services.UserService               : Login successful for user: sanyakhanna2020@gmail.com - Token generated
-2025-04-24T15:24:10.597+05:30  INFO 7196 --- [employee-payroll] [http-nio-8081-exec-4] c.b.e.services.UserService               : Login attempt for user:sanyakhanna2020@gmail.com
-2025-04-24T15:24:10.598+05:30 DEBUG 7196 --- [employee-payroll] [http-nio-8081-exec-4] c.b.e.services.UserService               : Fetching user by email: sanyakhanna2020@gmail.com
-2025-04-24T15:24:10.601+05:30 DEBUG 7196 --- [employee-payroll] [http-nio-8081-exec-4] c.b.e.services.UserService               : Matching password for login attempt
-2025-04-24T15:24:10.727+05:30 DEBUG 7196 --- [employee-payroll] [http-nio-8081-exec-4] c.b.e.services.UserService               : Login successful for user: sanyakhanna2020@gmail.com - Token generated
-2025-04-24T15:24:56.764+05:30  INFO 7196 --- [employee-payroll] [http-nio-8081-exec-5] c.b.e.services.UserService               : Initiating forget password for email: sanyakhanna2020@gmail.com
-2025-04-24T15:25:01.071+05:30  INFO 7196 --- [employee-payroll] [http-nio-8081-exec-5] c.b.e.services.UserService               : Reset link sent to: sanyakhanna2020@gmail.com
+2025-04-25T10:28:04.992+05:30  INFO 12220 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Starting EmployeePayrollApplication using Java 17.0.6 with PID 12220 (/Users/sanyakhanna/Desktop/bridgelabz-workspace/employee-payroll/target/classes started by sanyakhanna in /Users/sanyakhanna/Desktop/bridgelabz-workspace/employee-payroll)
+2025-04-25T10:28:04.995+05:30 DEBUG 12220 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Running with Spring Boot v3.3.10, Spring v6.1.18
+2025-04-25T10:28:04.997+05:30  INFO 12220 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : The following 1 profile is active: "dev"
+2025-04-25T10:28:10.276+05:30 DEBUG 12220 --- [employee-payroll] [main] c.b.e.utility.JwtRequestFilter           : Filter 'jwtRequestFilter' configured for use
+2025-04-25T10:28:10.505+05:30  WARN 12220 --- [employee-payroll] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-25T10:28:11.601+05:30  INFO 12220 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Started EmployeePayrollApplication in 7.445 seconds (process running for 8.004)
+2025-04-25T10:28:11.608+05:30  INFO 12220 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Employee Payroll App Started in DEV Environment
+2025-04-25T10:28:11.610+05:30  INFO 12220 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Employee Payroll DB user is root
+2025-04-25T10:28:19.349+05:30  INFO 12220 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Login attempt for user:sanyakhanna2020@gmail.com
+2025-04-25T10:28:19.350+05:30 DEBUG 12220 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Fetching user by email: sanyakhanna2020@gmail.com
+2025-04-25T10:28:19.483+05:30 DEBUG 12220 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Matching password for login attempt
+2025-04-25T10:28:19.699+05:30 DEBUG 12220 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Login successful for user: sanyakhanna2020@gmail.com - Token generated
+2025-04-25T10:28:32.676+05:30  INFO 12220 --- [employee-payroll] [http-nio-8081-exec-2] c.b.e.services.UserService               : Login attempt for user:sanyakhanna2020@gmail.com
+2025-04-25T10:28:32.676+05:30 DEBUG 12220 --- [employee-payroll] [http-nio-8081-exec-2] c.b.e.services.UserService               : Fetching user by email: sanyakhanna2020@gmail.com
+2025-04-25T10:28:32.679+05:30 DEBUG 12220 --- [employee-payroll] [http-nio-8081-exec-2] c.b.e.services.UserService               : Matching password for login attempt
+2025-04-25T10:28:32.810+05:30 DEBUG 12220 --- [employee-payroll] [http-nio-8081-exec-2] c.b.e.services.UserService               : Login successful for user: sanyakhanna2020@gmail.com - Token generated
+2025-04-25T10:28:41.302+05:30 ERROR 12220 --- [employee-payroll] [http-nio-8081-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+
+org.springframework.security.core.userdetails.UsernameNotFoundException: User not found with email: JWT expired at 2025-04-25T04:01:02Z. Current time: 2025-04-25T04:58:41Z, a difference of 3459283 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at com.bridgelabz.employee_payroll.services.JwtUserDetailsService.lambda$loadUserByUsername$0(JwtUserDetailsService.java:19) ~[classes/:na]
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403) ~[na:na]
+	at com.bridgelabz.employee_payroll.services.JwtUserDetailsService.loadUserByUsername(JwtUserDetailsService.java:19) ~[classes/:na]
+	at com.bridgelabz.employee_payroll.utility.JwtRequestFilter.doFilterInternal(JwtRequestFilter.java:46) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.18.jar:6.1.18]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.5.jar:6.3.5]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.3.5.jar:6.3.5]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.3.5.jar:6.3.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.5.jar:6.3.5]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.3.5.jar:6.3.5]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.3.5.jar:6.3.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.18.jar:6.1.18]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.5.jar:6.3.5]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.3.5.jar:6.3.5]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.3.5.jar:6.3.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.5.jar:6.3.5]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.3.5.jar:6.3.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.18.jar:6.1.18]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.5.jar:6.3.5]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.3.5.jar:6.3.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.18.jar:6.1.18]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.5.jar:6.3.5]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.3.5.jar:6.3.5]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.3.5.jar:6.3.5]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.18.jar:6.1.18]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.18.jar:6.1.18]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.18.jar:6.1.18]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.18.jar:6.1.18]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.3.5.jar:6.3.5]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362) ~[spring-web-6.1.18.jar:6.1.18]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278) ~[spring-web-6.1.18.jar:6.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.18.jar:6.1.18]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.18.jar:6.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.18.jar:6.1.18]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.18.jar:6.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.18.jar:6.1.18]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.18.jar:6.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2025-04-25T10:29:27.201+05:30  INFO 12220 --- [employee-payroll] [http-nio-8081-exec-5] c.b.e.services.UserService               : Login attempt for user:sanyakhanna2020@gmail.com
+2025-04-25T10:29:27.210+05:30 DEBUG 12220 --- [employee-payroll] [http-nio-8081-exec-5] c.b.e.services.UserService               : Fetching user by email: sanyakhanna2020@gmail.com
+2025-04-25T10:29:27.225+05:30 DEBUG 12220 --- [employee-payroll] [http-nio-8081-exec-5] c.b.e.services.UserService               : Matching password for login attempt
+2025-04-25T10:29:27.338+05:30 DEBUG 12220 --- [employee-payroll] [http-nio-8081-exec-5] c.b.e.services.UserService               : Login successful for user: sanyakhanna2020@gmail.com - Token generated
+2025-04-25T10:29:31.800+05:30  WARN 12220 --- [employee-payroll] [http-nio-8081-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.context.request.async.AsyncRequestNotUsableException: ServletOutputStream failed to flush: java.nio.channels.ClosedChannelException]
+2025-04-25T10:29:34.670+05:30  INFO 12231 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Starting EmployeePayrollApplication using Java 17.0.6 with PID 12231 (/Users/sanyakhanna/Desktop/bridgelabz-workspace/employee-payroll/target/classes started by sanyakhanna in /Users/sanyakhanna/Desktop/bridgelabz-workspace/employee-payroll)
+2025-04-25T10:29:34.674+05:30 DEBUG 12231 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Running with Spring Boot v3.3.10, Spring v6.1.18
+2025-04-25T10:29:34.676+05:30  INFO 12231 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : The following 1 profile is active: "dev"
+2025-04-25T10:29:40.078+05:30 DEBUG 12231 --- [employee-payroll] [main] c.b.e.utility.JwtRequestFilter           : Filter 'jwtRequestFilter' configured for use
+2025-04-25T10:29:40.350+05:30  WARN 12231 --- [employee-payroll] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-25T10:29:41.395+05:30  INFO 12231 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Started EmployeePayrollApplication in 7.566 seconds (process running for 8.212)
+2025-04-25T10:29:41.400+05:30  INFO 12231 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Employee Payroll App Started in DEV Environment
+2025-04-25T10:29:41.402+05:30  INFO 12231 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Employee Payroll DB user is root
+2025-04-25T10:29:49.026+05:30  INFO 12231 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Login attempt for user:sanyakhanna2020@gmail.com
+2025-04-25T10:29:49.027+05:30 DEBUG 12231 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Fetching user by email: sanyakhanna2020@gmail.com
+2025-04-25T10:29:49.141+05:30 DEBUG 12231 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Matching password for login attempt
+2025-04-25T10:29:49.334+05:30 DEBUG 12231 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Login successful for user: sanyakhanna2020@gmail.com - Token generated
+2025-04-25T10:30:05.218+05:30  INFO 12231 --- [employee-payroll] [http-nio-8081-exec-3] c.b.e.services.UserService               : Login attempt for user:sanyakhanna2020@gmail.com
+2025-04-25T10:30:05.218+05:30 DEBUG 12231 --- [employee-payroll] [http-nio-8081-exec-3] c.b.e.services.UserService               : Fetching user by email: sanyakhanna2020@gmail.com
+2025-04-25T10:30:05.222+05:30 DEBUG 12231 --- [employee-payroll] [http-nio-8081-exec-3] c.b.e.services.UserService               : Matching password for login attempt
+2025-04-25T10:30:05.341+05:30 DEBUG 12231 --- [employee-payroll] [http-nio-8081-exec-3] c.b.e.services.UserService               : Login successful for user: sanyakhanna2020@gmail.com - Token generated
+2025-04-25T10:30:57.364+05:30 ERROR 12231 --- [employee-payroll] [http-nio-8081-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+
+org.springframework.security.core.userdetails.UsernameNotFoundException: User not found with email: JWT expired at 2025-04-25T04:01:02Z. Current time: 2025-04-25T05:00:57Z, a difference of 3595316 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at com.bridgelabz.employee_payroll.services.JwtUserDetailsService.lambda$loadUserByUsername$0(JwtUserDetailsService.java:19) ~[classes/:na]
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403) ~[na:na]
+	at com.bridgelabz.employee_payroll.services.JwtUserDetailsService.loadUserByUsername(JwtUserDetailsService.java:19) ~[classes/:na]
+	at com.bridgelabz.employee_payroll.utility.JwtRequestFilter.doFilterInternal(JwtRequestFilter.java:46) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.18.jar:6.1.18]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.5.jar:6.3.5]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.3.5.jar:6.3.5]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.3.5.jar:6.3.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.5.jar:6.3.5]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.3.5.jar:6.3.5]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.3.5.jar:6.3.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.18.jar:6.1.18]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.5.jar:6.3.5]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.3.5.jar:6.3.5]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.3.5.jar:6.3.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.5.jar:6.3.5]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.3.5.jar:6.3.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.18.jar:6.1.18]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.5.jar:6.3.5]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.3.5.jar:6.3.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.18.jar:6.1.18]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.5.jar:6.3.5]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.3.5.jar:6.3.5]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.3.5.jar:6.3.5]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.18.jar:6.1.18]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.18.jar:6.1.18]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.18.jar:6.1.18]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.18.jar:6.1.18]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.3.5.jar:6.3.5]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362) ~[spring-web-6.1.18.jar:6.1.18]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278) ~[spring-web-6.1.18.jar:6.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.18.jar:6.1.18]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.18.jar:6.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.18.jar:6.1.18]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.18.jar:6.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.18.jar:6.1.18]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.18.jar:6.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2025-04-25T10:31:26.930+05:30  INFO 12243 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Starting EmployeePayrollApplication using Java 17.0.6 with PID 12243 (/Users/sanyakhanna/Desktop/bridgelabz-workspace/employee-payroll/target/classes started by sanyakhanna in /Users/sanyakhanna/Desktop/bridgelabz-workspace/employee-payroll)
+2025-04-25T10:31:26.933+05:30 DEBUG 12243 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Running with Spring Boot v3.3.10, Spring v6.1.18
+2025-04-25T10:31:26.934+05:30  INFO 12243 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : The following 1 profile is active: "dev"
+2025-04-25T10:31:32.280+05:30 DEBUG 12243 --- [employee-payroll] [main] c.b.e.utility.JwtRequestFilter           : Filter 'jwtRequestFilter' configured for use
+2025-04-25T10:31:32.472+05:30  WARN 12243 --- [employee-payroll] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-25T10:31:33.584+05:30  INFO 12243 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Started EmployeePayrollApplication in 7.492 seconds (process running for 8.057)
+2025-04-25T10:31:33.592+05:30  INFO 12243 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Employee Payroll App Started in DEV Environment
+2025-04-25T10:31:33.595+05:30  INFO 12243 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Employee Payroll DB user is root
+2025-04-25T10:31:44.101+05:30  INFO 12243 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Login attempt for user:sanyakhanna2020@gmail.com
+2025-04-25T10:31:44.103+05:30 DEBUG 12243 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Fetching user by email: sanyakhanna2020@gmail.com
+2025-04-25T10:31:44.111+05:30 DEBUG 12243 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Matching password for login attempt
+2025-04-25T10:31:44.306+05:30 DEBUG 12243 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Login successful for user: sanyakhanna2020@gmail.com - Token generated
+2025-04-25T10:33:33.967+05:30  INFO 12263 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Starting EmployeePayrollApplication using Java 17.0.6 with PID 12263 (/Users/sanyakhanna/Desktop/bridgelabz-workspace/employee-payroll/target/classes started by sanyakhanna in /Users/sanyakhanna/Desktop/bridgelabz-workspace/employee-payroll)
+2025-04-25T10:33:33.972+05:30 DEBUG 12263 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Running with Spring Boot v3.3.10, Spring v6.1.18
+2025-04-25T10:33:33.974+05:30  INFO 12263 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : The following 1 profile is active: "dev"
+2025-04-25T10:33:39.319+05:30 DEBUG 12263 --- [employee-payroll] [main] c.b.e.utility.JwtRequestFilter           : Filter 'jwtRequestFilter' configured for use
+2025-04-25T10:33:39.549+05:30  WARN 12263 --- [employee-payroll] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-25T10:33:40.543+05:30  INFO 12263 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Started EmployeePayrollApplication in 7.405 seconds (process running for 7.949)
+2025-04-25T10:33:40.547+05:30  INFO 12263 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Employee Payroll App Started in DEV Environment
+2025-04-25T10:33:40.550+05:30  INFO 12263 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Employee Payroll DB user is root
+2025-04-25T10:33:50.764+05:30  INFO 12263 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Login attempt for user:sanyakhanna2020@gmail.com
+2025-04-25T10:33:50.766+05:30 DEBUG 12263 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Fetching user by email: sanyakhanna2020@gmail.com
+2025-04-25T10:33:50.920+05:30 DEBUG 12263 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Matching password for login attempt
+2025-04-25T10:33:51.110+05:30 DEBUG 12263 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Login successful for user: sanyakhanna2020@gmail.com - Token generated
+2025-04-25T10:34:27.568+05:30  INFO 12273 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Starting EmployeePayrollApplication using Java 17.0.6 with PID 12273 (/Users/sanyakhanna/Desktop/bridgelabz-workspace/employee-payroll/target/classes started by sanyakhanna in /Users/sanyakhanna/Desktop/bridgelabz-workspace/employee-payroll)
+2025-04-25T10:34:27.571+05:30 DEBUG 12273 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Running with Spring Boot v3.3.10, Spring v6.1.18
+2025-04-25T10:34:27.573+05:30  INFO 12273 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : The following 1 profile is active: "dev"
+2025-04-25T10:34:33.166+05:30 DEBUG 12273 --- [employee-payroll] [main] c.b.e.utility.JwtRequestFilter           : Filter 'jwtRequestFilter' configured for use
+2025-04-25T10:34:33.552+05:30  WARN 12273 --- [employee-payroll] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-25T10:34:34.501+05:30  INFO 12273 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Started EmployeePayrollApplication in 7.765 seconds (process running for 8.322)
+2025-04-25T10:34:34.506+05:30  INFO 12273 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Employee Payroll App Started in DEV Environment
+2025-04-25T10:34:34.508+05:30  INFO 12273 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Employee Payroll DB user is root
+2025-04-25T10:34:46.180+05:30  INFO 12282 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Starting EmployeePayrollApplication using Java 17.0.6 with PID 12282 (/Users/sanyakhanna/Desktop/bridgelabz-workspace/employee-payroll/target/classes started by sanyakhanna in /Users/sanyakhanna/Desktop/bridgelabz-workspace/employee-payroll)
+2025-04-25T10:34:46.183+05:30 DEBUG 12282 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Running with Spring Boot v3.3.10, Spring v6.1.18
+2025-04-25T10:34:46.185+05:30  INFO 12282 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : The following 1 profile is active: "dev"
+2025-04-25T10:34:51.440+05:30 DEBUG 12282 --- [employee-payroll] [main] c.b.e.utility.JwtRequestFilter           : Filter 'jwtRequestFilter' configured for use
+2025-04-25T10:34:51.811+05:30  WARN 12282 --- [employee-payroll] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-25T10:34:52.790+05:30  INFO 12282 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Started EmployeePayrollApplication in 7.432 seconds (process running for 7.99)
+2025-04-25T10:34:52.794+05:30  INFO 12282 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Employee Payroll App Started in DEV Environment
+2025-04-25T10:34:52.796+05:30  INFO 12282 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Employee Payroll DB user is root
+2025-04-25T10:34:57.132+05:30  INFO 12282 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Login attempt for user:sanyakhanna2020@gmail.com
+2025-04-25T10:34:57.134+05:30 DEBUG 12282 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Fetching user by email: sanyakhanna2020@gmail.com
+2025-04-25T10:34:57.267+05:30 DEBUG 12282 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Matching password for login attempt
+2025-04-25T10:34:57.477+05:30 DEBUG 12282 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Login successful for user: sanyakhanna2020@gmail.com - Token generated
+2025-04-25T10:35:12.246+05:30  INFO 12282 --- [employee-payroll] [http-nio-8081-exec-2] c.b.e.services.UserService               : Forget password for email: sanyakhanna2020@gmail.com
+2025-04-25T10:35:12.247+05:30 DEBUG 12282 --- [employee-payroll] [http-nio-8081-exec-2] c.b.e.services.UserService               : Fetching user by email: sanyakhanna2020@gmail.com
+2025-04-25T10:36:26.973+05:30  INFO 12282 --- [employee-payroll] [http-nio-8081-exec-7] c.b.e.services.UserService               : Attempting to reset password using token: sanyakhanna2020@gmail.com
+2025-04-25T10:36:26.976+05:30 DEBUG 12282 --- [employee-payroll] [http-nio-8081-exec-7] c.b.e.services.UserService               : Fetching user by email: sanyakhanna2020@gmail.com
+2025-04-25T10:36:31.799+05:30  INFO 12282 --- [employee-payroll] [http-nio-8081-exec-7] c.b.e.services.UserService               : Password reset successful for user: sanyakhanna2020@gmail.com
+2025-04-25T10:36:52.749+05:30  INFO 12282 --- [employee-payroll] [http-nio-8081-exec-8] c.b.e.services.UserService               : Login attempt for user:sanyakhanna2020@gmail.com
+2025-04-25T10:36:52.751+05:30 DEBUG 12282 --- [employee-payroll] [http-nio-8081-exec-8] c.b.e.services.UserService               : Fetching user by email: sanyakhanna2020@gmail.com
+2025-04-25T10:36:52.761+05:30 DEBUG 12282 --- [employee-payroll] [http-nio-8081-exec-8] c.b.e.services.UserService               : Matching password for login attempt
+2025-04-25T10:36:52.880+05:30 DEBUG 12282 --- [employee-payroll] [http-nio-8081-exec-8] c.b.e.services.UserService               : Login successful for user: sanyakhanna2020@gmail.com - Token generated
+2025-04-25T10:43:52.895+05:30  INFO 12393 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Starting EmployeePayrollApplication using Java 17.0.6 with PID 12393 (/Users/sanyakhanna/Desktop/bridgelabz-workspace/employee-payroll/target/classes started by sanyakhanna in /Users/sanyakhanna/Desktop/bridgelabz-workspace/employee-payroll)
+2025-04-25T10:43:52.899+05:30 DEBUG 12393 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Running with Spring Boot v3.3.10, Spring v6.1.18
+2025-04-25T10:43:52.900+05:30  INFO 12393 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : The following 1 profile is active: "dev"
+2025-04-25T10:43:58.508+05:30 DEBUG 12393 --- [employee-payroll] [main] c.b.e.utility.JwtRequestFilter           : Filter 'jwtRequestFilter' configured for use
+2025-04-25T10:43:58.970+05:30  WARN 12393 --- [employee-payroll] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-25T10:43:59.699+05:30  INFO 12393 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Started EmployeePayrollApplication in 7.648 seconds (process running for 8.325)
+2025-04-25T10:43:59.704+05:30  INFO 12393 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Employee Payroll App Started in DEV Environment
+2025-04-25T10:43:59.706+05:30  INFO 12393 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Employee Payroll DB user is root
+2025-04-25T10:44:14.461+05:30  INFO 12393 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Login attempt for user:sanyakhanna2020@gmail.com
+2025-04-25T10:44:14.462+05:30 DEBUG 12393 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Fetching user by email: sanyakhanna2020@gmail.com
+2025-04-25T10:44:14.590+05:30 DEBUG 12393 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Matching password for login attempt
+2025-04-25T10:44:14.837+05:30 DEBUG 12393 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Login successful for user: sanyakhanna2020@gmail.com - Token generated
+2025-04-25T10:45:06.588+05:30  INFO 12409 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Starting EmployeePayrollApplication using Java 17.0.6 with PID 12409 (/Users/sanyakhanna/Desktop/bridgelabz-workspace/employee-payroll/target/classes started by sanyakhanna in /Users/sanyakhanna/Desktop/bridgelabz-workspace/employee-payroll)
+2025-04-25T10:45:06.593+05:30 DEBUG 12409 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Running with Spring Boot v3.3.10, Spring v6.1.18
+2025-04-25T10:45:06.594+05:30  INFO 12409 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : The following 1 profile is active: "dev"
+2025-04-25T10:45:12.066+05:30 DEBUG 12409 --- [employee-payroll] [main] c.b.e.utility.JwtRequestFilter           : Filter 'jwtRequestFilter' configured for use
+2025-04-25T10:45:12.347+05:30  WARN 12409 --- [employee-payroll] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-25T10:45:13.110+05:30  INFO 12409 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Started EmployeePayrollApplication in 7.348 seconds (process running for 7.894)
+2025-04-25T10:45:13.114+05:30  INFO 12409 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Employee Payroll App Started in DEV Environment
+2025-04-25T10:45:13.116+05:30  INFO 12409 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Employee Payroll DB user is root
+2025-04-25T10:45:16.616+05:30  INFO 12409 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Login attempt for user:sanyakhanna2020@gmail.com
+2025-04-25T10:45:16.617+05:30 DEBUG 12409 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Fetching user by email: sanyakhanna2020@gmail.com
+2025-04-25T10:45:16.737+05:30 DEBUG 12409 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Matching password for login attempt
+2025-04-25T10:45:16.953+05:30 DEBUG 12409 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Login successful for user: sanyakhanna2020@gmail.com - Token generated
+2025-04-25T10:45:58.975+05:30  INFO 12420 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Starting EmployeePayrollApplication using Java 17.0.6 with PID 12420 (/Users/sanyakhanna/Desktop/bridgelabz-workspace/employee-payroll/target/classes started by sanyakhanna in /Users/sanyakhanna/Desktop/bridgelabz-workspace/employee-payroll)
+2025-04-25T10:45:58.978+05:30 DEBUG 12420 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Running with Spring Boot v3.3.10, Spring v6.1.18
+2025-04-25T10:45:58.980+05:30  INFO 12420 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : The following 1 profile is active: "dev"
+2025-04-25T10:46:04.778+05:30 DEBUG 12420 --- [employee-payroll] [main] c.b.e.utility.JwtRequestFilter           : Filter 'jwtRequestFilter' configured for use
+2025-04-25T10:46:05.057+05:30  WARN 12420 --- [employee-payroll] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-25T10:46:05.809+05:30  INFO 12420 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Started EmployeePayrollApplication in 7.665 seconds (process running for 8.236)
+2025-04-25T10:46:05.815+05:30  INFO 12420 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Employee Payroll App Started in DEV Environment
+2025-04-25T10:46:05.817+05:30  INFO 12420 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Employee Payroll DB user is root
+2025-04-25T10:46:09.034+05:30  INFO 12420 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Login attempt for user:sanyakhanna2020@gmail.com
+2025-04-25T10:46:09.035+05:30 DEBUG 12420 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Fetching user by email: sanyakhanna2020@gmail.com
+2025-04-25T10:46:09.169+05:30 DEBUG 12420 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Matching password for login attempt
+2025-04-25T10:46:09.383+05:30 DEBUG 12420 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Login successful for user: sanyakhanna2020@gmail.com - Token generated
+2025-04-25T10:48:09.882+05:30  INFO 12444 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Starting EmployeePayrollApplication using Java 17.0.6 with PID 12444 (/Users/sanyakhanna/Desktop/bridgelabz-workspace/employee-payroll/target/classes started by sanyakhanna in /Users/sanyakhanna/Desktop/bridgelabz-workspace/employee-payroll)
+2025-04-25T10:48:09.885+05:30 DEBUG 12444 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Running with Spring Boot v3.3.10, Spring v6.1.18
+2025-04-25T10:48:09.887+05:30  INFO 12444 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : The following 1 profile is active: "dev"
+2025-04-25T10:48:15.370+05:30 DEBUG 12444 --- [employee-payroll] [main] c.b.e.utility.JwtRequestFilter           : Filter 'jwtRequestFilter' configured for use
+2025-04-25T10:48:15.854+05:30  WARN 12444 --- [employee-payroll] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-25T10:48:16.674+05:30  INFO 12444 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Started EmployeePayrollApplication in 7.635 seconds (process running for 8.186)
+2025-04-25T10:48:16.679+05:30  INFO 12444 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Employee Payroll App Started in DEV Environment
+2025-04-25T10:48:16.681+05:30  INFO 12444 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Employee Payroll DB user is root
+2025-04-25T10:48:32.538+05:30  INFO 12444 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Login attempt for user:sanyakhanna2020@gmail.com
+2025-04-25T10:48:32.540+05:30 DEBUG 12444 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Fetching user by email: sanyakhanna2020@gmail.com
+2025-04-25T10:48:32.664+05:30 DEBUG 12444 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Matching password for login attempt
+2025-04-25T10:48:32.895+05:30 DEBUG 12444 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Login successful for user: sanyakhanna2020@gmail.com - Token generated
+2025-04-25T11:08:00.905+05:30  INFO 12736 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Starting EmployeePayrollApplication using Java 17.0.6 with PID 12736 (/Users/sanyakhanna/Desktop/bridgelabz-workspace/employee-payroll/target/classes started by sanyakhanna in /Users/sanyakhanna/Desktop/bridgelabz-workspace/employee-payroll)
+2025-04-25T11:08:00.909+05:30 DEBUG 12736 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Running with Spring Boot v3.3.10, Spring v6.1.18
+2025-04-25T11:08:00.911+05:30  INFO 12736 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : The following 1 profile is active: "dev"
+2025-04-25T11:08:07.522+05:30 DEBUG 12736 --- [employee-payroll] [main] c.b.e.utility.JwtRequestFilter           : Filter 'jwtRequestFilter' configured for use
+2025-04-25T11:08:07.788+05:30  WARN 12736 --- [employee-payroll] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-25T11:08:08.948+05:30  INFO 12736 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Started EmployeePayrollApplication in 8.898 seconds (process running for 9.533)
+2025-04-25T11:08:08.956+05:30  INFO 12736 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Employee Payroll App Started in DEV Environment
+2025-04-25T11:08:08.959+05:30  INFO 12736 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Employee Payroll DB user is root
+2025-04-25T11:08:24.294+05:30  INFO 12753 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Starting EmployeePayrollApplication using Java 17.0.6 with PID 12753 (/Users/sanyakhanna/Desktop/bridgelabz-workspace/employee-payroll/target/classes started by sanyakhanna in /Users/sanyakhanna/Desktop/bridgelabz-workspace/employee-payroll)
+2025-04-25T11:08:24.297+05:30 DEBUG 12753 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Running with Spring Boot v3.3.10, Spring v6.1.18
+2025-04-25T11:08:24.298+05:30  INFO 12753 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : The following 1 profile is active: "dev"
+2025-04-25T11:08:29.636+05:30 DEBUG 12753 --- [employee-payroll] [main] c.b.e.utility.JwtRequestFilter           : Filter 'jwtRequestFilter' configured for use
+2025-04-25T11:08:29.998+05:30  WARN 12753 --- [employee-payroll] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-25T11:08:30.948+05:30  INFO 12753 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Started EmployeePayrollApplication in 7.638 seconds (process running for 8.243)
+2025-04-25T11:08:30.953+05:30  INFO 12753 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Employee Payroll App Started in DEV Environment
+2025-04-25T11:08:30.954+05:30  INFO 12753 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Employee Payroll DB user is root
+2025-04-25T11:08:36.688+05:30  INFO 12753 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Login attempt for user:sanyakhanna2020@gmail.com
+2025-04-25T11:08:36.689+05:30 DEBUG 12753 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Fetching user by email: sanyakhanna2020@gmail.com
+2025-04-25T11:08:36.837+05:30 DEBUG 12753 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Matching password for login attempt
+2025-04-25T11:08:37.059+05:30 DEBUG 12753 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Login successful for user: sanyakhanna2020@gmail.com - Token generated
+2025-04-25T11:09:24.640+05:30  INFO 12753 --- [employee-payroll] [http-nio-8081-exec-3] c.b.e.services.UserService               : Forget password for email: sanyakhanna2020@gmail.com
+2025-04-25T11:09:24.643+05:30 DEBUG 12753 --- [employee-payroll] [http-nio-8081-exec-3] c.b.e.services.UserService               : Fetching user by email: sanyakhanna2020@gmail.com
+2025-04-25T11:09:56.668+05:30  INFO 12753 --- [employee-payroll] [http-nio-8081-exec-4] c.b.e.services.UserService               : Attempting to reset password using token: sanyakhanna2020@gmail.com
+2025-04-25T11:09:56.673+05:30 DEBUG 12753 --- [employee-payroll] [http-nio-8081-exec-4] c.b.e.services.UserService               : Fetching user by email: sanyakhanna2020@gmail.com
+2025-04-25T11:10:01.482+05:30  INFO 12753 --- [employee-payroll] [http-nio-8081-exec-4] c.b.e.services.UserService               : Password reset successful for user: sanyakhanna2020@gmail.com
+2025-04-25T11:10:24.439+05:30  INFO 12753 --- [employee-payroll] [http-nio-8081-exec-5] c.b.e.services.UserService               : Login attempt for user:sanyakhanna2020@gmail.com
+2025-04-25T11:10:24.442+05:30 DEBUG 12753 --- [employee-payroll] [http-nio-8081-exec-5] c.b.e.services.UserService               : Fetching user by email: sanyakhanna2020@gmail.com
+2025-04-25T11:10:24.477+05:30 DEBUG 12753 --- [employee-payroll] [http-nio-8081-exec-5] c.b.e.services.UserService               : Matching password for login attempt
+2025-04-25T11:10:24.580+05:30  WARN 12753 --- [employee-payroll] [http-nio-8081-exec-5] c.b.e.services.UserService               : Invalid credentials for user: sanyakhanna2020@gmail.com
+2025-04-25T11:10:31.580+05:30  INFO 12753 --- [employee-payroll] [http-nio-8081-exec-6] c.b.e.services.UserService               : Login attempt for user:sanyakhanna2020@gmail.com
+2025-04-25T11:10:31.582+05:30 DEBUG 12753 --- [employee-payroll] [http-nio-8081-exec-6] c.b.e.services.UserService               : Fetching user by email: sanyakhanna2020@gmail.com
+2025-04-25T11:10:31.593+05:30 DEBUG 12753 --- [employee-payroll] [http-nio-8081-exec-6] c.b.e.services.UserService               : Matching password for login attempt
+2025-04-25T11:10:31.699+05:30  WARN 12753 --- [employee-payroll] [http-nio-8081-exec-6] c.b.e.services.UserService               : Invalid credentials for user: sanyakhanna2020@gmail.com
+2025-04-25T11:11:02.844+05:30  INFO 12783 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Starting EmployeePayrollApplication using Java 17.0.6 with PID 12783 (/Users/sanyakhanna/Desktop/bridgelabz-workspace/employee-payroll/target/classes started by sanyakhanna in /Users/sanyakhanna/Desktop/bridgelabz-workspace/employee-payroll)
+2025-04-25T11:11:02.848+05:30 DEBUG 12783 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Running with Spring Boot v3.3.10, Spring v6.1.18
+2025-04-25T11:11:02.849+05:30  INFO 12783 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : The following 1 profile is active: "dev"
+2025-04-25T11:11:08.208+05:30 DEBUG 12783 --- [employee-payroll] [main] c.b.e.utility.JwtRequestFilter           : Filter 'jwtRequestFilter' configured for use
+2025-04-25T11:11:08.553+05:30  WARN 12783 --- [employee-payroll] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-25T11:11:09.490+05:30  INFO 12783 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Started EmployeePayrollApplication in 7.506 seconds (process running for 8.045)
+2025-04-25T11:11:09.495+05:30  INFO 12783 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Employee Payroll App Started in DEV Environment
+2025-04-25T11:11:09.497+05:30  INFO 12783 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Employee Payroll DB user is root
+2025-04-25T11:11:12.695+05:30  INFO 12783 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Login attempt for user:sanyakhanna2020@gmail.com
+2025-04-25T11:11:12.697+05:30 DEBUG 12783 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Fetching user by email: sanyakhanna2020@gmail.com
+2025-04-25T11:11:12.817+05:30 DEBUG 12783 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Matching password for login attempt
+2025-04-25T11:11:12.919+05:30  WARN 12783 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Invalid credentials for user: sanyakhanna2020@gmail.com
+2025-04-25T11:11:17.493+05:30  INFO 12783 --- [employee-payroll] [http-nio-8081-exec-3] c.b.e.services.UserService               : Login attempt for user:sanyakhanna2020@gmail.com
+2025-04-25T11:11:17.494+05:30 DEBUG 12783 --- [employee-payroll] [http-nio-8081-exec-3] c.b.e.services.UserService               : Fetching user by email: sanyakhanna2020@gmail.com
+2025-04-25T11:11:17.510+05:30 DEBUG 12783 --- [employee-payroll] [http-nio-8081-exec-3] c.b.e.services.UserService               : Matching password for login attempt
+2025-04-25T11:11:17.740+05:30 DEBUG 12783 --- [employee-payroll] [http-nio-8081-exec-3] c.b.e.services.UserService               : Login successful for user: sanyakhanna2020@gmail.com - Token generated
+2025-04-25T11:11:32.435+05:30  INFO 12783 --- [employee-payroll] [http-nio-8081-exec-4] c.b.e.services.UserService               : Forget password for email: sanyakhanna2020@gmail.com
+2025-04-25T11:11:32.438+05:30 DEBUG 12783 --- [employee-payroll] [http-nio-8081-exec-4] c.b.e.services.UserService               : Fetching user by email: sanyakhanna2020@gmail.com
+2025-04-25T11:11:50.725+05:30  INFO 12783 --- [employee-payroll] [http-nio-8081-exec-5] c.b.e.services.UserService               : Forget password for email: sanyakhanna2020@gmail.com
+2025-04-25T11:11:50.728+05:30 DEBUG 12783 --- [employee-payroll] [http-nio-8081-exec-5] c.b.e.services.UserService               : Fetching user by email: sanyakhanna2020@gmail.com
+2025-04-25T11:12:45.915+05:30  INFO 12783 --- [employee-payroll] [http-nio-8081-exec-6] c.b.e.services.UserService               : Attempting to reset password using token: sanyakhanna2020@gmail.com
+2025-04-25T11:12:45.920+05:30 DEBUG 12783 --- [employee-payroll] [http-nio-8081-exec-6] c.b.e.services.UserService               : Fetching user by email: sanyakhanna2020@gmail.com
+2025-04-25T11:12:45.936+05:30 DEBUG 12783 --- [employee-payroll] [http-nio-8081-exec-6] c.b.e.services.UserService               : OTP mismatch!!
+2025-04-25T11:12:45.937+05:30  WARN 12783 --- [employee-payroll] [http-nio-8081-exec-6] c.b.e.services.UserService               : Invalid OTP for email: sanyakhanna2020@gmail.com
+2025-04-25T11:13:14.606+05:30  INFO 12783 --- [employee-payroll] [http-nio-8081-exec-8] c.b.e.services.UserService               : Login attempt for user:sanyakhanna2020@gmail.com
+2025-04-25T11:13:14.610+05:30 DEBUG 12783 --- [employee-payroll] [http-nio-8081-exec-8] c.b.e.services.UserService               : Fetching user by email: sanyakhanna2020@gmail.com
+2025-04-25T11:13:14.643+05:30 DEBUG 12783 --- [employee-payroll] [http-nio-8081-exec-8] c.b.e.services.UserService               : Matching password for login attempt
+2025-04-25T11:13:14.762+05:30 DEBUG 12783 --- [employee-payroll] [http-nio-8081-exec-8] c.b.e.services.UserService               : Login successful for user: sanyakhanna2020@gmail.com - Token generated
+2025-04-25T11:13:35.367+05:30  INFO 12783 --- [employee-payroll] [http-nio-8081-exec-9] c.b.e.services.UserService               : Forget password for email: sanyakhanna2020@gmail.com
+2025-04-25T11:13:35.371+05:30 DEBUG 12783 --- [employee-payroll] [http-nio-8081-exec-9] c.b.e.services.UserService               : Fetching user by email: sanyakhanna2020@gmail.com
+2025-04-25T11:14:11.637+05:30  INFO 12783 --- [employee-payroll] [http-nio-8081-exec-10] c.b.e.services.UserService               : Attempting to reset password using token: sanyakhanna2020@gmail.com
+2025-04-25T11:14:11.640+05:30 DEBUG 12783 --- [employee-payroll] [http-nio-8081-exec-10] c.b.e.services.UserService               : Fetching user by email: sanyakhanna2020@gmail.com
+2025-04-25T11:14:11.674+05:30 DEBUG 12783 --- [employee-payroll] [http-nio-8081-exec-10] c.b.e.services.UserService               : OTP mismatch!!
+2025-04-25T11:14:11.674+05:30  WARN 12783 --- [employee-payroll] [http-nio-8081-exec-10] c.b.e.services.UserService               : Invalid OTP for email: sanyakhanna2020@gmail.com
+2025-04-25T11:23:30.853+05:30  INFO 12866 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Starting EmployeePayrollApplication using Java 17.0.6 with PID 12866 (/Users/sanyakhanna/Desktop/bridgelabz-workspace/employee-payroll/target/classes started by sanyakhanna in /Users/sanyakhanna/Desktop/bridgelabz-workspace/employee-payroll)
+2025-04-25T11:23:30.857+05:30 DEBUG 12866 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Running with Spring Boot v3.3.10, Spring v6.1.18
+2025-04-25T11:23:30.859+05:30  INFO 12866 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : The following 1 profile is active: "dev"
+2025-04-25T11:23:36.620+05:30 DEBUG 12866 --- [employee-payroll] [main] c.b.e.utility.JwtRequestFilter           : Filter 'jwtRequestFilter' configured for use
+2025-04-25T11:23:36.997+05:30  WARN 12866 --- [employee-payroll] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-25T11:23:37.717+05:30  INFO 12866 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Started EmployeePayrollApplication in 7.717 seconds (process running for 8.364)
+2025-04-25T11:23:37.722+05:30  INFO 12866 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Employee Payroll App Started in DEV Environment
+2025-04-25T11:23:37.724+05:30  INFO 12866 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Employee Payroll DB user is root
+2025-04-25T11:23:43.181+05:30  INFO 12866 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Login attempt for user:sanyakhanna2020@gmail.com
+2025-04-25T11:23:43.182+05:30 DEBUG 12866 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Fetching user by email: sanyakhanna2020@gmail.com
+2025-04-25T11:23:43.307+05:30 DEBUG 12866 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Matching password for login attempt
+2025-04-25T11:23:43.553+05:30 DEBUG 12866 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Login successful for user: sanyakhanna2020@gmail.com - Token generated
+2025-04-25T11:24:37.082+05:30  INFO 12866 --- [employee-payroll] [http-nio-8081-exec-3] c.b.e.services.UserService               : Forget password for email: sanyakhanna2020@gmail.com
+2025-04-25T11:24:37.092+05:30 DEBUG 12866 --- [employee-payroll] [http-nio-8081-exec-3] c.b.e.services.UserService               : Fetching user by email: sanyakhanna2020@gmail.com
+2025-04-25T11:25:00.617+05:30  INFO 12866 --- [employee-payroll] [http-nio-8081-exec-4] c.b.e.services.UserService               : Attempting to reset password using token: sanyakhanna2020@gmail.com
+2025-04-25T11:25:00.620+05:30 DEBUG 12866 --- [employee-payroll] [http-nio-8081-exec-4] c.b.e.services.UserService               : Fetching user by email: sanyakhanna2020@gmail.com
+2025-04-25T11:25:05.076+05:30  INFO 12866 --- [employee-payroll] [http-nio-8081-exec-4] c.b.e.services.UserService               : Password reset successful for user: sanyakhanna2020@gmail.com
+2025-04-25T11:25:11.837+05:30  INFO 12866 --- [employee-payroll] [http-nio-8081-exec-5] c.b.e.services.UserService               : Attempting to reset password using token: sanyakhanna2020@gmail.com
+2025-04-25T11:25:11.840+05:30 DEBUG 12866 --- [employee-payroll] [http-nio-8081-exec-5] c.b.e.services.UserService               : Fetching user by email: sanyakhanna2020@gmail.com
+2025-04-25T11:25:11.852+05:30 DEBUG 12866 --- [employee-payroll] [http-nio-8081-exec-5] c.b.e.services.UserService               : OTP mismatch!!
+2025-04-25T11:25:11.857+05:30  WARN 12866 --- [employee-payroll] [http-nio-8081-exec-5] c.b.e.services.UserService               : Invalid OTP for email: sanyakhanna2020@gmail.com
+2025-04-25T11:25:50.278+05:30  INFO 12898 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Starting EmployeePayrollApplication using Java 17.0.6 with PID 12898 (/Users/sanyakhanna/Desktop/bridgelabz-workspace/employee-payroll/target/classes started by sanyakhanna in /Users/sanyakhanna/Desktop/bridgelabz-workspace/employee-payroll)
+2025-04-25T11:25:50.281+05:30 DEBUG 12898 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Running with Spring Boot v3.3.10, Spring v6.1.18
+2025-04-25T11:25:50.282+05:30  INFO 12898 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : The following 1 profile is active: "dev"
+2025-04-25T11:25:55.643+05:30 DEBUG 12898 --- [employee-payroll] [main] c.b.e.utility.JwtRequestFilter           : Filter 'jwtRequestFilter' configured for use
+2025-04-25T11:25:55.889+05:30  WARN 12898 --- [employee-payroll] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-25T11:25:56.882+05:30  INFO 12898 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Started EmployeePayrollApplication in 7.438 seconds (process running for 8.056)
+2025-04-25T11:25:56.887+05:30  INFO 12898 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Employee Payroll App Started in DEV Environment
+2025-04-25T11:25:56.889+05:30  INFO 12898 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Employee Payroll DB user is root
+2025-04-25T11:26:02.592+05:30  INFO 12898 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Forget password for email: sanyakhanna2020@gmail.com
+2025-04-25T11:26:02.595+05:30 DEBUG 12898 --- [employee-payroll] [http-nio-8081-exec-1] c.b.e.services.UserService               : Fetching user by email: sanyakhanna2020@gmail.com
+2025-04-25T11:26:28.415+05:30  INFO 12898 --- [employee-payroll] [http-nio-8081-exec-2] c.b.e.services.UserService               : Attempting to reset password using token: sanyakhanna2020@gmail.com
+2025-04-25T11:26:28.416+05:30 DEBUG 12898 --- [employee-payroll] [http-nio-8081-exec-2] c.b.e.services.UserService               : Fetching user by email: sanyakhanna2020@gmail.com
+2025-04-25T11:26:33.246+05:30  INFO 12898 --- [employee-payroll] [http-nio-8081-exec-2] c.b.e.services.UserService               : Password reset successful for user: sanyakhanna2020@gmail.com
+2025-04-25T11:26:42.008+05:30  INFO 12898 --- [employee-payroll] [http-nio-8081-exec-4] c.b.e.services.UserService               : Login attempt for user:sanyakhanna2020@gmail.com
+2025-04-25T11:26:42.009+05:30 DEBUG 12898 --- [employee-payroll] [http-nio-8081-exec-4] c.b.e.services.UserService               : Fetching user by email: sanyakhanna2020@gmail.com
+2025-04-25T11:26:42.021+05:30 DEBUG 12898 --- [employee-payroll] [http-nio-8081-exec-4] c.b.e.services.UserService               : Matching password for login attempt
+2025-04-25T11:26:42.157+05:30 DEBUG 12898 --- [employee-payroll] [http-nio-8081-exec-4] c.b.e.services.UserService               : Login successful for user: sanyakhanna2020@gmail.com - Token generated
+2025-04-25T11:27:25.637+05:30  INFO 12917 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Starting EmployeePayrollApplication using Java 17.0.6 with PID 12917 (/Users/sanyakhanna/Desktop/bridgelabz-workspace/employee-payroll/target/classes started by sanyakhanna in /Users/sanyakhanna/Desktop/bridgelabz-workspace/employee-payroll)
+2025-04-25T11:27:25.639+05:30 DEBUG 12917 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Running with Spring Boot v3.3.10, Spring v6.1.18
+2025-04-25T11:27:25.641+05:30  INFO 12917 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : The following 1 profile is active: "dev"
+2025-04-25T11:27:31.417+05:30 DEBUG 12917 --- [employee-payroll] [main] c.b.e.utility.JwtRequestFilter           : Filter 'jwtRequestFilter' configured for use
+2025-04-25T11:27:31.815+05:30  WARN 12917 --- [employee-payroll] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-25T11:27:32.766+05:30  INFO 12917 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Started EmployeePayrollApplication in 8.054 seconds (process running for 8.64)
+2025-04-25T11:27:32.771+05:30  INFO 12917 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Employee Payroll App Started in DEV Environment
+2025-04-25T11:27:32.773+05:30  INFO 12917 --- [employee-payroll] [main] c.b.e.EmployeePayrollApplication         : Employee Payroll DB user is root

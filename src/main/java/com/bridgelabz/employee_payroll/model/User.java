@@ -34,8 +34,6 @@ public class User implements UserDetails {
 
     private String token;
 
-    private String resetToken;
-
 //    public long getId(){
 //        return id;
 //    }

@@ -3,6 +3,7 @@ package com.bridgelabz.employee_payroll.services;
 
 import com.bridgelabz.employee_payroll.dto.LoginDTO;
 import com.bridgelabz.employee_payroll.dto.RegisterDTO;
+import com.bridgelabz.employee_payroll.dto.ResetPasswordDTO;
 import com.bridgelabz.employee_payroll.dto.ResponseDTO;
 import com.bridgelabz.employee_payroll.model.User;
 import com.bridgelabz.employee_payroll.repository.UserRepository;
@@ -30,6 +31,8 @@ public class UserService implements UserInterface{
 
     @Autowired
     private JwtUtility jwtUtility;
+
+    private String otp;
 //
 //    @Autowired
 //    private RabbitMQProducer rabbitMQProducer;
@@ -52,7 +55,7 @@ public class UserService implements UserInterface{
         user.setPassword(passwordEncoder.encode(user.getPassword()));
         userRepository.save(user);
         log.info("User {} registered successfuly!", user.getEmail());
-        emailService.sendEmail(user.getEmail(), "Registered in employee-payroll app", "Hi..."+"\n You have een successfully registered");
+        emailService.sendEmail(user.getEmail(), "Registered in employee-payroll app", "Hi...\nYou have been successfully registered");
         res.setMessage("message");
         res.setData("User registered successfuly!");
         return res;
@@ -72,9 +75,9 @@ public class UserService implements UserInterface{
                 user.setToken(token);
                 userRepository.save(user);
                 log.debug("Login successful for user: {} - Token generated",user.getEmail());
-                emailService.sendEmail(user.getEmail(),"Logged in employee-payroll app", "Hi..."+"/n You have been successfully logged in !"+token);
+                emailService.sendEmail(user.getEmail(),"Logged in employee-payroll app", "Hi "+user.getName()+" \nYou have been successfully logged in !\n"+"token: "+token);
                 res.setMessage("message");
-                res.setData("User logged in successfully: "+token);
+                res.setData("User logged in successfully with token: " + token);
                 return res;
             }
             else {
@@ -113,64 +116,74 @@ public class UserService implements UserInterface{
 
     public String generateOTP(){
         Random random=new Random();
-        int otp=100000+random.nextInt(900000);
-        return String.valueOf(otp);
+        int otpGenerated=100000+random.nextInt(900000);
+        return String.valueOf(otpGenerated);
     }
 
     @Override
-    public ResponseDTO<String,String> forgetPassword(@NotBlank(message = "Email field can't be empty") @Email String email) {
-        log.info("Forget password for email: {}", email);
+    public ResponseDTO<String,String> forgetPassword(LoginDTO loginDTO) {
+        log.info("Forget password for email: {}", loginDTO.getEmail());
         ResponseDTO<String,String> res=new ResponseDTO<>();
-        Optional<User> userExists=userRepository.findByEmail(email);
+        Optional<User> userExists=getUserByEmail(loginDTO.getEmail());
 
         if(userExists.isPresent()){
             User user=userExists.get();
-//            Generate token via JwtUtility
-            String token=jwtUtility.generateToken(email);
-            user.setResetToken(token);
-            userRepository.save(user);
+//            Generate otp to be sent via email
+            otp=generateOTP();
 
-            String resetLink = "http://localhost:8080/reset-password?token=" + token;
-            emailService.sendEmail(email, "Reset Your Password", "Click here to reset your password:\n" + resetLink);
-
-            log.info("Reset link sent to: {}", email);
-            res.setMessage("message");
-            res.setData("Reset link sent successfully to email.");
-            return res;
-            }
-            else{
-                log.error("User not found with email: {}" , email);
-                res.setMessage("error");
-                res.setData("User not found");
-                return res;
-            }
+            emailService.sendEmail(user.getEmail(), "OTP Verification Request", "Please enter this OTP to reset your password." + "\nOTP: "+otp);
+            res.setMessage("OTP verification");
+            res.setData("OTP sent to the user");
         }
+        else{
+            log.error("User not found with email: {}" , loginDTO.getEmail());
+            res.setMessage("error");
+            res.setData("User not found");
+        }
+        return res;
+    }
+
+
 
     @Override
-    public ResponseDTO<String, String> resetPassword(String token, String newPassword) {
-        log.info("Attempting to reset password using token: {}", token);
+    public ResponseDTO<String, String> resetPassword(ResetPasswordDTO resetPasswordDTO) {
+        log.info("Attempting to reset password using token: {}", resetPasswordDTO.getEmail());
         ResponseDTO<String, String> res = new ResponseDTO<>();
 
         try {
-            String email = jwtUtility.extractEmail(token);
-            Optional<User> userOptional = userRepository.findByEmail(email);
+//            String email = jwtUtility.extractEmail(token);
 
+            Optional<User> userOptional = getUserByEmail(resetPasswordDTO.getEmail());
             if(userOptional.isPresent()) {
                 User user = userOptional.get();
 
-                // Compare token to stored one for extra validation
-//                 if (!token.equals(user.getResetToken())) {
-//                     log.debug("Token mismatch!!");
-//                 }
+                // Compare otp to stored one for extra validation
+                 if (!resetPasswordDTO.getOtp().equals(otp)) {
+                     log.debug("OTP mismatch!!");
+                     log.warn("Invalid OTP for email: {}", resetPasswordDTO.getEmail());
+                     res.setMessage("error");
+                     res.setData("Invalid OTP");
+                     return res;
+                 }
+                else{
+                    // Encrypt new password and update
+                    String encodedPassword = passwordEncoder.encode(resetPasswordDTO.getNewPassword());
+                    user.setPassword(encodedPassword);
 
-                user.setPassword(passwordEncoder.encode(newPassword));
-                user.setResetToken(null); // Clear the reset token
-                userRepository.save(user);
+                    // Clear OTP after use
+                    otp = null;
+                    userRepository.save(user);
 
-                log.info("Password reset successful for user: {}", email);
-                res.setMessage("message");
-                res.setData("Password reset successfully.");
-                return res;
+
+                    emailService.sendEmail(user.getEmail(), "Reset Password confirmation", "Your new password has been set successfully.");
+                    res.setMessage("successful");
+                    res.setData("Password set successfully.");
+
+                    log.info("Password reset successful for user: {}", resetPasswordDTO.getEmail());
+                    res.setMessage("message");
+                    res.setData("Password reset successfully.");
+                    return res;
+                }
             }
             else {
                 res.setMessage("error");
@@ -178,9 +191,9 @@ public class UserService implements UserInterface{
                 return res;
             }
         } catch (Exception e) {
-            log.error("Token invalid or expired: {}", e.getMessage());
+            log.error("Otp invalid or expired: {}", e.getMessage());
             res.setMessage("error");
-            res.setData("Token is invalid or expired.");
+            res.setData("Otp is invalid or expired.");
             return res;
         }
     }

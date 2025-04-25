@@ -2,6 +2,7 @@ package com.bridgelabz.employee_payroll.controller;
 
 import com.bridgelabz.employee_payroll.dto.LoginDTO;
 import com.bridgelabz.employee_payroll.dto.RegisterDTO;
+import com.bridgelabz.employee_payroll.dto.ResetPasswordDTO;
 import com.bridgelabz.employee_payroll.dto.ResponseDTO;
 import com.bridgelabz.employee_payroll.services.UserService;
 import com.bridgelabz.employee_payroll.utility.JwtUtility;
@@ -37,18 +38,18 @@ public class UserController {
     }
 
     // Forget password endpoint
-    @PostMapping("/forget-password/{email}")
-    public ResponseEntity<ResponseDTO> forgetPassword(@PathVariable ("email") String email){
-        ResponseDTO responseDTO =userService.forgetPassword(email);
+    @PostMapping("/forget-password")
+    public ResponseEntity<ResponseDTO> forgetPassword(@RequestBody LoginDTO loginDTO){
+        ResponseDTO responseDTO =userService.forgetPassword(loginDTO);
         return new ResponseEntity<>(responseDTO,
                 responseDTO.getMessage().equals("error") ? HttpStatus.BAD_REQUEST : HttpStatus.OK);
     }
 
 
     // Reset password endpoint
-    @PostMapping("/reset-password/{token}/{newPassword}")
-    public ResponseEntity<ResponseDTO> resetPassword(@PathVariable String token, @PathVariable String newPassword) {
-        ResponseDTO responseDTO = userService.resetPassword(token, newPassword);
+    @PostMapping("/reset-password")
+    public ResponseEntity<ResponseDTO> resetPassword(@RequestBody ResetPasswordDTO resetPasswordDTO) {
+        ResponseDTO responseDTO = userService.resetPassword(resetPasswordDTO);
         return new ResponseEntity<>(responseDTO,
                 responseDTO.getMessage().equals("error") ? HttpStatus.BAD_REQUEST : HttpStatus.OK);
     }

@@ -2,6 +2,7 @@ package com.bridgelabz.employee_payroll.services;
 
 import com.bridgelabz.employee_payroll.dto.LoginDTO;
 import com.bridgelabz.employee_payroll.dto.RegisterDTO;
+import com.bridgelabz.employee_payroll.dto.ResetPasswordDTO;
 import com.bridgelabz.employee_payroll.dto.ResponseDTO;
 import com.bridgelabz.employee_payroll.model.User;
 import jakarta.validation.constraints.Email;
@@ -20,7 +21,7 @@ public interface UserInterface {
 
     Optional<User> getUserByEmail(String email);
 
-    ResponseDTO forgetPassword(@NotBlank(message = "Email field can't be empty") @Email String email);
+    ResponseDTO<String,String> forgetPassword(LoginDTO loginDTO);
 
-    ResponseDTO<String, String> resetPassword(String token, String newPassword);
+    ResponseDTO<String, String> resetPassword(ResetPasswordDTO resetPasswordDTO);
 }
